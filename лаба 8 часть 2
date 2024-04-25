@@ -1,0 +1,22 @@
+import numpy as np
+# Заданные значения
+S = 30
+G = 6
+K = 80301
+# Заданная матрица коэффициентов
+A = np.array([[1, 5, 1],[4, -1, 1],[S, G, 2*(S+G+K)]])
+# Вектор правой части
+B = np.array([S-G+K+10, S-G+4*K-2, 2*((S-G)*(S+G+K)+G)+K*S])
+# Решение системы уравнений
+X = np.linalg.solve(A, B) # np.linalg.solve для решения систем линейных уравнений
+# Обратная матрица и определитель
+inverse_A = np.linalg.inv(A)
+determinant_A = np.linalg.det(A)
+print("Решение системы уравнений:")
+print("x1 =", X[0])
+print("x2 =", X[1])
+print("x3 =", X[2])
+print("\nОбратная матрица:")
+print(inverse_A)
+print("\nОпределитель матрицы:")
+print(determinant_A)
