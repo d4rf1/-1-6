@@ -1,0 +1,17 @@
+x = -3
+y = 5
+z = -2
+u = 0
+if x < 0:
+    u += x ** 2
+if y < 0:
+    u += y ** 2
+if z < 0:
+    u += z ** 2
+if u == 0:
+    print("Все три числа неотрицательные")
+else:
+    print("x =", x)
+    print("y =", y)
+    print("z =", z)
+    print("u =", u)
