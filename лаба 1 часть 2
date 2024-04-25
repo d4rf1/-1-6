@@ -1,0 +1,7 @@
+from math import*
+u=1
+v8=1
+r=u + 2*v8 - 3
+x=u-v8
+o=((sin(2*x) + 3*e**(-r))/(5+(tan(4*x)**2)))
+print(o)
